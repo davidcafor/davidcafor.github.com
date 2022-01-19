@@ -1,0 +1,10 @@
+<!ELEMENT booklist (book+)>
+<!ELEMENT book (author, title, published)>
+<!ATTLIST book
+          format CDATA #REQUIRED
+          genre CDATA #REQUIRED>
+<!ELEMENT author (firstname, lastname)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT published (#PCDATA)>
